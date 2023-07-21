@@ -1,0 +1,36 @@
+<!-- 
+    How this program works:
+    The popup.js file sends a message "Clicked" to content.js when the hackButton is pressed in popup.html
+    content.js then receives this message and knows to hack the page i.e. make it editable
+    This is done by putting this in the console:
+    document.body.contentEditable = 'true'
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXL7CEJJY9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-XXL7CEJJY9');
+    </script>
+    <title>Edit this page?</title>
+</head>
+
+<body>
+    <h1 id="title">Edit this page?</h1>
+    <button id="editButton">Edit</button>
+    <button id="disableButton">Disable</button>
+    <script src="popup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+    color: #333;
+    width: 100%; /* 将body调宽，使其占据整个可见宽度 */
+}
+
+button {
+    width: 150px; /* 设置按钮的统一宽度 */
+    height: 40px; /* 设置按钮的统一高度 */
+    background-color: #4CAF50;
+    border: none;
+    margin: 5px; /* 设置按钮之间的间距 */
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* This happens when cursor hovers over button */
+button:hover {
+    background-color: #45a049;
+}
+
+#title {
+    margin: 15px;
+    font-size: 1.75rem;
+}
+
+#credits {
+    margin: 20px;
+    font-size: 0.8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#tutorial {
+    font-size: small;
+}
+
+/* This is for the color of the hyperlink */
+a:link,
+a:visited {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+}
